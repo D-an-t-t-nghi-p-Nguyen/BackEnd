@@ -26,6 +26,11 @@ public class OderServiceImpl implements OderService {
 	private UserDao userDao;
 	
 	@Override
+	public List<OderEntity> GetOderDelete(){
+		return oderDao.findDeleteOder();
+	}
+	
+	@Override
 	public List<OderEntity> GetOder() {
 		return oderDao.findAllOder();
 	}

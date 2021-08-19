@@ -8,6 +8,7 @@ import com.example.demo.entity.OderRequest;
 public interface OderService {
 
 	List<OderEntity>GetOder();
+	List<OderEntity>GetOderDelete();
 	List<OderEntity>GetOderByBlog(Integer blog_id);
 	OderEntity CreateOder(OderRequest oderRequest );
 	OderEntity GetOderById(OderEntity oderEntity );
