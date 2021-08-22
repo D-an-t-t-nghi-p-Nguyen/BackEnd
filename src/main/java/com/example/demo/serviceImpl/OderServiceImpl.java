@@ -46,6 +46,7 @@ public class OderServiceImpl implements OderService {
 		OderEntity entity = new OderEntity();
 		Date date = new java.util.Date();
 		entity.setAmount(oderRequest.getAmount());
+		entity.setPrice(oderRequest.getPrice());
 		entity.setDateBooking(date);
 		entity.setDateGo(oderRequest.getDateGo());
 		entity.setIs_Delete(false);

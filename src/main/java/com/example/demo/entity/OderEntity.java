@@ -18,7 +18,8 @@ public class OderEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String number;
-	private String amount;
+	private int amount;
+	private int price;
 	private Date dateBooking;
 	private String dateGo;	    
 	@ManyToOne
@@ -29,6 +30,20 @@ public class OderEntity {
     private BlogEntity motel_id ;
     private boolean is_Delete;
     
+    
+
+	public int getAmount() {
+		return amount;
+	}
+	public void setAmount(int amount) {
+		this.amount = amount;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
 	public Integer getId() {
 		return id;
 	}
@@ -40,12 +55,6 @@ public class OderEntity {
 	}
 	public void setNumber(String number) {
 		this.number = number;
-	}
-	public String getAmount() {
-		return amount;
-	}
-	public void setAmount(String amount) {
-		this.amount = amount;
 	}
 	public Date getDateBooking() {
 		return dateBooking;
